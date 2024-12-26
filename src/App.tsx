@@ -1,21 +1,23 @@
-import Hero from './components/Hero'
-import About from './components/About'
-import Projects from './components/Projects'
-import Contact from './components/Contact'
-import Header from './components/Header'
-import Education from './components/Education'
-import Experiences from './components/Experiences'
+import { Header } from "@/components/header"
+import { Hero } from "@/components/hero"
+import { About } from "@/components/about"
+import { Education } from "@/components/education"
+import { Experiences } from "@/components/experiences"
+import { Projects } from "@/components/projects"
+import { Contact } from "@/components/contact"
 
-export default function App() {
+export default function Home() {
   return (
-    <div className="bg-gray-50 text-gray-900">
+    <div className="min-h-screen bg-background">
       <Header />
-      <Hero />
-      <About />
-      <Education />
-      <Experiences />
-      <Projects />
-      <Contact />
+      <main>
+        <Hero />
+        <About />
+        <Education />
+        <Experiences />
+        <Projects />
+        <Contact />
+      </main>
     </div>
   )
 }
