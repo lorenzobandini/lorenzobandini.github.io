@@ -52,7 +52,17 @@ export default {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
-  			}
+  			},
+			main: {
+				DEFAULT: '#002147',
+				foreground: 'hsl(var(--main-foreground))'
+			},
+			second: {
+				DEFAULT: '#2892D7',
+				foreground: 'hsl(var(--second-foreground))'
+			},
+			third: '#6DAEDB',
+			light: '#FBFFF1',
   		}
   	}
   },

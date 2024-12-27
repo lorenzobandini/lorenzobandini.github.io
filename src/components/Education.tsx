@@ -25,27 +25,27 @@ export function Education() {
   ]
 
   return (
-    <section id="education" className="py-24">
+    <section id="education" className="py-24 bg-main">
       <div className="container px-4">
-        <h2 className="text-3xl font-bold mb-8">Education</h2>
+        <h2 className="text-3xl font-bold text-light mb-8">Education</h2>
         <div className="grid gap-6">
           {education.map((edu, index) => (
-            <Card key={index}>
+            <Card key={index} className="bg-light border-second/10">
               <CardHeader>
                 <div className="flex justify-between items-start">
                   <div>
-                    <CardTitle>{edu.school}</CardTitle>
-                    <CardDescription>{edu.degree}</CardDescription>
+                    <CardTitle className="text-main">{edu.school}</CardTitle>
+                    <CardDescription className="text-second">{edu.degree}</CardDescription>
                   </div>
                   <div className="text-right">
-                    <div className="text-sm text-muted-foreground">{edu.period}</div>
-                    <div className="text-sm text-muted-foreground">{edu.location}</div>
+                    <div className="text-sm text-main">{edu.period}</div>
+                    <div className="text-sm text-main">{edu.location}</div>
                   </div>
                 </div>
               </CardHeader>
               {edu.description && (
                 <CardContent>
-                  <p className="text-sm text-muted-foreground">{edu.description}</p>
+                  <p className="text-sm text-main">{edu.description}</p>
                 </CardContent>
               )}
             </Card>

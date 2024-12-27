@@ -8,9 +8,9 @@ import { Contact } from "@/components/contact"
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-main text-light">
       <Header />
-      <main>
+      <main className="pt-16">
         <Hero />
         <About />
         <Education />
@@ -18,6 +18,9 @@ export default function Home() {
         <Projects />
         <Contact />
       </main>
+      <footer className="bg-main-foreground text-light py-4 text-center">
+        <p>&copy; {new Date().getFullYear()} Lorenzo Bandini. All rights reserved.</p>
+      </footer>
     </div>
   )
 }

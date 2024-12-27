@@ -42,28 +42,28 @@ export function Experiences() {
   ]
 
   return (
-    <section id="experience" className="py-24 bg-muted/50">
+    <section id="experience" className="py-24 bg-second">
       <div className="container px-4">
-        <h2 className="text-3xl font-bold mb-8">Experience</h2>
+        <h2 className="text-3xl font-bold text-main mb-8">Experience</h2>
         <div className="grid gap-6">
           {experiences.map((exp, index) => (
-            <Card key={index}>
+            <Card key={index} className="bg-light border-main/10">
               <CardHeader>
                 <div className="flex justify-between items-start">
                   <div>
-                    <CardTitle>{exp.role}</CardTitle>
-                    <CardDescription>{exp.company}</CardDescription>
+                    <CardTitle className="text-main">{exp.role}</CardTitle>
+                    <CardDescription className="text-second">{exp.company}</CardDescription>
                   </div>
                   <div className="text-right">
-                    <div className="text-sm text-muted-foreground">{exp.period}</div>
-                    <div className="text-sm text-muted-foreground">{exp.location}</div>
+                    <div className="text-sm text-main">{exp.period}</div>
+                    <div className="text-sm text-main">{exp.location}</div>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <ul className="list-disc list-inside space-y-1">
                   {exp.description.map((item, i) => (
-                    <li key={i} className="text-sm text-muted-foreground">{item}</li>
+                    <li key={i} className="text-sm text-main">{item}</li>
                   ))}
                 </ul>
               </CardContent>
