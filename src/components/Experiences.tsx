@@ -12,7 +12,7 @@ export function Experiences() {
     {
       company: "JEVIS - Junior Enterprise of Pisa",
       role: "Head of IT",
-      period: "Feb. 2024 – Present",
+      period: "Feb. 2024 - Present",
       location: "Pisa, Italy",
       description: [
         "Leading a team of 9 in IT internal projects, delivering a microservices-based internal application using Docker Compose, FastAPI, MongoDB, and ReactJS to support performance analysis and recruitment decisions.",
@@ -31,10 +31,10 @@ export function Experiences() {
       ],
     },
     {
-      company: "CNR – National Research Council",
-      role: "Intern – Research Assistant",
-      period: "Jul. 2024 – Oct. 2024",
-      location: "Italy",
+      company: "CNR - National Research Council",
+      role: "Intern - Research Assistant",
+      period: "Jul. 2024 - Oct. 2024",
+      location: "Pisa, Italy",
       description: [
         "Completed 375 hours developing U-ProBE, a Python GUI for rapid post-hoc uncertainty quantification on deep learning image classifiers.",
         "Partially supported by EU-funded projects ProCAncer-I and FAITH, currently authoring a research paper for a European convention.",
@@ -50,8 +50,8 @@ export function Experiences() {
     {
       company: "JEItaly - Junior Enterprises Italy",
       role: "IT Specialist",
-      period: "Feb. 2024 – Oct. 2024",
-      location: "Italy",
+      period: "Feb. 2024 - Oct. 2024",
+      location: "Remote",
       description: [
         "Designed and implemented tailored IT solutions to streamline processes across 36 affiliated associations.",
         "Delivered technical support and conducted training sessions for IT teams within member organizations.",
@@ -66,7 +66,7 @@ export function Experiences() {
     {
       company: "JEVIS - Junior Enterprise of Pisa",
       role: "Deputy Head of IT",
-      period: "Oct. 2023 – Feb. 2024",
+      period: "Oct. 2023 - Feb. 2024",
       location: "Pisa, Italy",
       description: [
         "Recognized with the top junior initiative award in the Italian network for 2023/2024.",
