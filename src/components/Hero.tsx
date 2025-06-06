@@ -57,7 +57,7 @@ function ThreeScene() {
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-main py-12">
-      <div className="absolute inset-0 bg-gradient-to-b from-main/50 to-main" />
+      <div className="absolute inset-0 bg-linear-to-b from-main/50 to-main" />
       
       <div className="container relative px-4 grid lg:grid-cols-2 gap-12 items-center">
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-6">

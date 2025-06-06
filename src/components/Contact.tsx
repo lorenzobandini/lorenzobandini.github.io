@@ -63,7 +63,7 @@ export function Contact() {
               <div className="space-y-4">
                 {contactInfo.map((item, index) => (
                   <div key={index} className="flex items-start gap-4 group">
-                    <div className="flex-shrink-0 w-6 h-6 mt-1 text-main group-hover:text-third transition-colors">
+                    <div className="shrink-0 w-6 h-6 mt-1 text-main group-hover:text-third transition-colors">
                       {item.icon}
                     </div>
                     <div>
