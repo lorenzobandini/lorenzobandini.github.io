@@ -65,7 +65,7 @@ function ThreeScene() {
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-main pt-24 pb-16 px-4">
+    <section className="relative min-h-screen-[30] flex items-center justify-center bg-main pt-24 pb-16 p</section>x-4">
       <div className="absolute inset-0 bg-linear-to-b from-main/50 to-main" />
 
       <div className="container relative flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-12 items-center max-w-7xl mx-auto">
@@ -108,7 +108,7 @@ export function Hero() {
             </Button>
             <Button
               variant="outline"
-              className="border-second text-second hover:bg-second/10 w-full sm:w-auto"
+              className="border-second text-second hover:bg-second/10 w-full sm:w-auto hover:text-second"
               asChild>
               <a href="#projects">View projects</a>
             </Button>

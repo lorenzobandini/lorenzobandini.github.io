@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { SkillBadge } from "@/components/ui/skill-badge";
 
 export function About() {
   const skills = {
@@ -82,28 +82,21 @@ export function About() {
             <CardContent className="pt-6">
               <h3 className="text-xl font-semibold mb-6 text-main">
                 My Skillset & Passions
-              </h3>
+              </h3>{" "}
               <div className="space-y-6">
                 {Object.entries(skills).map(([category, items]) => (
-                  <div key={category}>
-                    <h4 className="text-md font-semibold mb-3 capitalize text-main">
-                      {category === "toolsTech"
+                  <SkillBadge
+                    key={category}
+                    skills={items}
+                    title={
+                      category === "toolsTech"
                         ? "Tools & Technologies"
                         : category === "programming"
                         ? "Programming & Web"
-                        : category.charAt(0).toUpperCase() + category.slice(1)}
-                    </h4>
-                    <div className="flex flex-wrap gap-2">
-                      {items.map((skill) => (
-                        <Badge
-                          key={skill}
-                          variant="secondary"
-                          className="bg-third text-light text-xs px-3 py-1">
-                          {skill}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
+                        : category.charAt(0).toUpperCase() + category.slice(1)
+                    }
+                    badgeClassName="px-3 py-1"
+                  />
                 ))}
               </div>
             </CardContent>

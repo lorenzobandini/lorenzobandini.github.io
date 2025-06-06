@@ -5,7 +5,7 @@ import {
   CardTitle,
   CardDescription,
 } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { SkillBadge } from "@/components/ui/skill-badge";
 
 export function Experiences() {
   const experiences = [
@@ -110,23 +110,13 @@ export function Experiences() {
                       {item}
                     </li>
                   ))}
-                </ul>
+                </ul>{" "}
                 {exp.skills && exp.skills.length > 0 && (
-                  <div className="mt-4">
-                    <h4 className="text-sm font-semibold mb-2 text-main">
-                      Key Skills & Technologies:
-                    </h4>
-                    <div className="flex flex-wrap gap-2">
-                      {exp.skills.map((skill) => (
-                        <Badge
-                          key={skill}
-                          variant="secondary"
-                          className="bg-third text-light text-xs">
-                          {skill}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
+                  <SkillBadge
+                    skills={exp.skills}
+                    title="Key Skills & Technologies:"
+                    className="mt-4"
+                  />
                 )}
               </CardContent>
             </Card>
