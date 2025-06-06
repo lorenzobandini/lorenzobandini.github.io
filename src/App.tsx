@@ -18,7 +18,7 @@ export default function Home() {
         <Projects />
         <Contact />
       </main>
-      <footer className="bg-main-foreground text-light py-4 text-center">
+      <footer className="bg-main-foreground text-second py-4 text-center">
         <p>&copy; {new Date().getFullYear()} Lorenzo Bandini. All rights reserved.</p>
       </footer>
     </div>
