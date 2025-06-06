@@ -9,7 +9,7 @@ import {
 import { SkillBadge } from "@/components/ui/skill-badge";
 import { Github } from "lucide-react";
 
-export function Projects() {
+export default function Projects() {
   const projects = [
     {
       title: "Gacha World",
@@ -53,7 +53,7 @@ export function Projects() {
         "TCP communication for user registration and login, review submission and search",
         "UDP multicast connection for ranking update notifications",
       ],
-      tech: ["Java"],
+      tech: ["Java", "Maven"],
       repo: "https://github.com/lorenzobandini/hotelier",
     },
     {

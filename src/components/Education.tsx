@@ -6,7 +6,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-export function Education() {
+export default function Education() {
   const educationEntries = [
     {
       school: "University of Pisa",

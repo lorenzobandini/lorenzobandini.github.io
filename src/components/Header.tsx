@@ -20,7 +20,7 @@ import {
   SheetClose,
 } from "@/components/ui/sheet";
 
-export function Header() {
+export default function Header() {
   const [isScrolled, setIsScrolled] = React.useState(false);
 
   React.useEffect(() => {

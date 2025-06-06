@@ -14,7 +14,7 @@ import {
   Download,
 } from "lucide-react"; // Added FileText and Download
 
-export function Contact() {
+export default function Contact() {
   const contactInfo = [
     {
       icon: <Mail className="h-5 w-5 text-main" />,

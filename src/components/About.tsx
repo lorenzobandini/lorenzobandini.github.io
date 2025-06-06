@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { SkillBadge } from "@/components/ui/skill-badge";
 
-export function About() {
+export default function About() {
   const skills = {
     languages: ["Italian (Native)", "English (Professional)"],
     programming: [
@@ -24,6 +24,7 @@ export function About() {
       "MongoDB",
       "MySQL",
       "SQLite",
+      "Maven",
       "tRPC",
       "Prisma",
       "Tailwind CSS",

@@ -63,7 +63,7 @@ function ThreeScene() {
   );
 }
 
-export function Hero() {
+export default function Hero() {
   return (
     <section className="relative min-h-screen-[30] flex items-center justify-center bg-main pt-24 pb-16 p</section>x-4">
       <div className="absolute inset-0 bg-linear-to-b from-main/50 to-main" />

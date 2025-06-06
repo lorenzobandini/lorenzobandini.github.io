@@ -1,10 +1,10 @@
-import { Header } from "@/components/header"
-import { Hero } from "@/components/hero"
-import { About } from "@/components/about"
-import { Education } from "@/components/education"
-import { Experiences } from "@/components/experiences"
-import { Projects } from "@/components/projects"
-import { Contact } from "@/components/contact"
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Education from "@/components/Education";
+import Experiences from "@/components/Experiences";
+import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -19,8 +19,11 @@ export default function Home() {
         <Contact />
       </main>
       <footer className="bg-main-foreground text-second py-4 text-center">
-        <p>&copy; {new Date().getFullYear()} Lorenzo Bandini. All rights reserved.</p>
+        <p>
+          &copy; {new Date().getFullYear()} Lorenzo Bandini. All rights
+          reserved.
+        </p>
       </footer>
     </div>
-  )
+  );
 }

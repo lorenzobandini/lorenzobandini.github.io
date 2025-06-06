@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/card";
 import { SkillBadge } from "@/components/ui/skill-badge";
 
-export function Experiences() {
+export default function Experiences() {
   const experiences = [
     {
       company: "JEVIS - Junior Enterprise of Pisa",
