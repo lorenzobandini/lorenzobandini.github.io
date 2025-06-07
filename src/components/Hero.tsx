@@ -14,7 +14,7 @@ function NerdEmoji() {
   useEffect(() => {
     const loader = new GLTFLoader();
     loader.load(
-      "/src/assets/models/nerd_emoji_3d.glb",
+      "/nerd_emoji_3d.glb",
       (gltf: GLTF) => {
         gltf.scene.scale.set(2, 2, 2);
         setModel(gltf.scene);

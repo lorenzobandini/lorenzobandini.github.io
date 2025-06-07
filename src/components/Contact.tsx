@@ -137,7 +137,7 @@ export default function Contact() {
                 asChild
                 className="border-main/30 hover:border-third hover:bg-third/10 transition-all w-full">
                 <a
-                  href="/src/assets/LorenzoBandini_CV.pdf"
+                  href="/LorenzoBandini_CV.pdf"
                   download="LorenzoBandini_CV.pdf"
                   className="flex items-center justify-center gap-2 text-main hover:text-third transition-colors px-6 py-3 rounded-md">
                   <Download className="h-5 w-5" />
